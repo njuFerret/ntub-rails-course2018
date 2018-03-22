@@ -1,0 +1,117 @@
+body {
+    font-size: 12px;
+}
+
+.seafood-baclground {
+    background-color: #67057c;
+    height: 475px;
+}
+
+.head-nav {
+    color: whitesmoke;
+    background-image: linear-gradient(to bottom, #2d2d2e, #131317);
+}
+
+.head-nav-items a {
+    color: whitesmoke;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.container {
+    color: whitesmoke;
+}
+
+.container div {
+    padding-top: 5px;
+}
+
+.container a {
+    color: whitesmoke;
+}
+
+.form-search .input-group-append {
+    padding-top: 0;
+}
+
+.minnav {
+    border-left: #a60c93 1px solid;
+}
+
+.minnav nav {
+    line-height: 0;
+}
+
+#main-nav {
+    margin-top: 25px;
+    padding-top: 0;
+    font-size: 18px;
+    padding-bottom: 10px;
+    background-color: #a60c93;
+    line-height: 1;
+    float: 0;
+}
+
+#carouselExampleIndicators {
+    padding: 0 0;
+    top: -15px;
+}
+
+@media (min-width: 768px) {
+    #main-nav{
+        margin: 25 -10 0 -10;
+    }
+
+    #main-nav nav{
+        width: 100%;
+    }
+    #main-nav nav div ul{
+        margin: 0 auto;
+    }
+}
+
+#blockquote-text{
+    color: #000;
+    background-color: #FFF;
+}
+
+.more-btn {
+    color: rgba(255, 255, 255, 0);
+    top: -15px;
+}
+
+.center-announcement a{
+    color: black;
+}
+
+.center-announcement div{
+    color: black;
+}
+
+.center-announcement p{
+    margin-bottom: 0;
+}
+
+.sky {
+    background: url(http://www.ntub.edu.tw/ezfiles/0/1000/css/115/css_115_9150302_56821.jpg);
+    height: 300px;
+}
+
+.sky ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.sky a{
+    color: #1f262b;
+}
+
+.footer-item nav{
+    border-left: whitesmoke 1px solid;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#footer-text {
+    font-size: 14px;
+}
