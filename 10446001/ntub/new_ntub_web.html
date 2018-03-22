@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascripts/bootstrap.bundle.js"></script>
+    <script src="assets/javascripts/jssor.slider-27.1.0.min.js"></script>
+    <script src="assets/javascripts/main.js"></script>
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap-reboot.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <title>新．國立臺北商業大學</title>
+  </head>
+  <body>
+      <!-- 從這裡開始 -->
+      <div class="container-fluid">
+  <!--                          ******top******                                   -->
+      <div class="top">   
+        <div class="row">
+          <div class="col-xs-5 col-sm-6 col-lg-6">
+            <p>Welcome to National Taipei University of Business</p>
+          </div>
+          <div class="col-xs-7 col-sm-6 col-lg-6">
+            <div class="row float-right " id="topright">
+              <div class=" col-sm"><a href="#" style="color:white">認識北商</a></div>
+              <div class=" col-sm"><a href="#" style="color:white">網站導覽</a></div>
+              <div class=" col-sm"><a href="#" style="color:white">緊急電話</a></div>
+              <div class=" col-sm"><a href="#" style="color:white">交通資訊</a></div>
+              <div class=" col-sm"><a href="#" style="color:white">諮詢服務</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--                          ******top end******                                        -->
+  <!-- *********************************************************************************** -->
+  <!--                          ******header******                                        -->
+      <div class="header">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-7 col-xl-9 ">
+            <img src="images/logo.png"class="mt-2" style=" max-width: 100%">
+            <ul class="list-inline float-right pt-3">
+              <li class="list-inline-item pr-5"><a href="#" style="color:white">首頁</a></li>
+              <li class="list-inline-item pr-5"><a href="#" style="color:white">English</a></li>
+              <li class="list-inline-item pr-5"><a href="#" style="color:white">Facebook</a></li>
+              <li class="list-inline-item "><a href="#" style="color:white">校友服務資訊系統</a></li><br>
+                <form action="/bin/ptsearch.php" method="post" class="float-right mt-3">
+                  <input class="input" id="schkey" name="SchKey" onclick="this.select()" onkeypress="" type="text" value="Keyword">
+                  <input class="submit" type="submit" value="Search">&nbsp;
+                </form>
+            </ul>
+          </div>
+  
+          <div class="col-sm-6 col-md-6 col-lg-5 col-xl-3">
+            <ul class="list-unstyled pl-4 pt-2">
+                <a href="#" style="color:white"><li>學　生</li></a>
+                <a href="#" style="color:white"><li>教職員</li></a>
+                <a href="#" style="color:white"><li>新　生</li></a>
+                <a href="#" style="color:white"><li>校　友</li></a>
+                <a href="#" style="color:white"><li>訪　客</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <!--                          ******header end******                                        -->
+  
+  <!--                          ****** navbar   ******                                        -->
+      <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+      <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+      <div class="navbarmenu">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#a50082">
+          <!-- .navbar-toggler 漢堡式選單按鈕 -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+          <!-- 選單項目&漢堡式折疊選單 -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <!-- active表示當前頁面 -->
+              <li class="nav-item active">
+                <a class="nav-link" href="#" style="background-color:#a50082">桃園校區<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">教學單位</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">財經學院</a>
+                  <a class="dropdown-item" href="#">管理學院</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">行政單位</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">校長室</a>
+                  <a class="dropdown-item" href="#">劉副校長室</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">附設學校</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">空中學院(學院部)</a>
+                  <a class="dropdown-item" href="#">空中學院(二專部)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">圖書閱覽</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">圖書館</a>
+                  <a class="dropdown-item" href="#">電子校刊</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">招生資訊</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">日間學制</a>
+                  <a class="dropdown-item" href="#">進修學制</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">境外學生</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">僑生</a>
+                  <a class="dropdown-item" href="#">交換生</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">招生資訊</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#970077">
+                  <a class="dropdown-item" href="#">日間學制</a>
+                  <a class="dropdown-item" href="#">進修學制</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">推廣教育</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">育成中心</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">百年校慶</a>
+              </li>
+              <!-- .dropdown Navbar選項使用下拉式選單 -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+  <!--                          ****** navbar  end ******                                        -->
+  
+  <!--                          ****** slidesshow  ******                                        -->
+      <div class="slidesshow">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner bg-white" id="imagesshow">
+            <div class="carousel-item active">
+              <img class="d-block w-100 mt-3 " src="images/1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mt-3" src="images/2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mt-3" src="images/3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mt-3" src="images/4.jpg" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mt-3" src="images/5.jpg" alt="Fifth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mt-3" src="images/6.jpg" alt="Sixth slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  <!--                          ****** slidesshow end  ******                                        -->
+  
+  <!--                         *******      quotes        ********                                   -->
+      <div class="quotes">
+        <blockquote class="blockquote text-left">
+          <p class="mt-5"><span class="font-weight-bold d-inline-block" style="background:#DDDDDD; color:#666666;">English Quotes</span></p>
+          <p class="font-weight-bold h6" id="quotesp">「行動」是難下的決定，剩下的只是堅持。</p>
+          <p class="font-italic h6" id="quotesp">"The most difficult thing is the decision to act, the rest is merely tenacity. "   —　- 愛蜜莉亞·艾爾哈特 - 美<br><p class="font-italic h6"  id="pc">國女性飛行員、女權運動者</p></p>
+        </blockquote>
+      </div>
+  <!--                         *******      quotes end      ********                                   -->
+  
+  <!--                         *******        main         ********                                    -->
+      <div class="main mt-5">
+        <div class="row">
+          <!--   ***  col-2  *** -->
+          <div class="xl-col-2 lg-col-2 md-col-3 sm-col-4">
+            <strong><span style="color: #AAAAAA;">ACTIVITES & EVENTS</span></strong>
+            <p class=" font-weight-bold h6">活動看板</p>
+            <!-- Slideshow container -->
+              <div class="slideshow-container">
+              <!-- Full-width slides/quotes -->
+              <div class="mySlides">
+                <img class="w-100" src="images/c1.jpg">
+              </div>
+              <div class="mySlides">
+                <img class="w-100" src="images/c2.jpg">
+              </div>
+              <div class="mySlides">
+                <img class="w-100" src="images/c3.jpg">
+              </div>
+              <div class="mySlides">
+                <img class="w-100" src="images/c4.jpg">
+              </div>
+              <div class="mySlides">
+                <img class="w-100" src="images/c5.jpg">
+              </div>
+              <div class="mySlides">
+                <img class="w-100" src="images/c6.jpg">
+              </div>
+              <!-- Next/prev buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <!-- Dots/bullets/indicators -->
+              <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+              <!-- Slideshow container -->
+              <script>
+                var myIndex = 0;
+                carousel();
+  
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+          </div>
+          <!--   ***  col-2 end  *** -->
+  
+          <!--   ***  col-8  *** -->
+          <div class="xl-col-8 lg-col-8 md-col-6 sm-col-4 ml-3">
+            <!-- Tab links -->
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')">訊息公告</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">學術研討</button>
+              <button class="tablinks" onclick="openCity(event, 'Tab3')">榮譽講座</button>
+              <button class="tablinks" onclick="openCity(event, 'Tab4')">招生動態</button>
+              <button class="tablinks" onclick="openCity(event, 'Tab5')">校園職缺</button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">校外徵才</button>
+            </div>
+  
+            <!-- Tab content -->
+            <div id="London" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">【經管組公告】畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【公告】教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+            <div id="Paris" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【公告】教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+            <div id="Tab3" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">【經管組公告】畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【公告】教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+            <div id="Tab4" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">【經管組公告】畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【公告】教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+            <div id="Tab5" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【公告】教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+            <div id="Tokyo" class="tabcontent">
+              <p id="tabp"><a href="#" style="color:#000000">【經管組公告】畢業典禮學位服租借通知(107.3.16) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】義守大學教學發展中心舉辦「106學年度第二學期教師成長與數位學習活動」之活動簡介及交通資訊 [ 2018-03-16 ]</p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-中級班～3/23開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC攻略-初級班～3/27開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】106學年度第2學期多益TOEIC-口說訓練班～3/28開課 [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【桃園校區】不動產估價師學分假日班第6期～開課時間：4/22 (補助3學分費用) [ 2018-03-16 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">函轉勞動部勞動力發展署身心障礙者數位學習平台「無礙e網」免費學習網站，鼓勵師生多加利用。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">【轉知】國立中興大學教學資源暨發展中心訂於107年3月22日(星期四)舉辦「106年度教師教學計畫成果分享會」 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">教育部107年度補助技專校院辦理產業學院計畫申請事宜，詳如說明，請查照。 [ 2018-03-15 ]</a></p>
+              <p id="tabp"><a href="#" style="color:#000000">就業e把罩：2018北商大就業季系列活動—儒鴻企業股份有限公司徵才說明會 [ 2018-03-15 ]</a></p>
+            </div>
+          </div>
+  
+        <!--   ***  col-8 end  *** -->
+        <!--   ***  col-2   *** -->
+          <div class="xl-col-2 lg-col-2 md-col-3 sm-col-4 bg-info mt-3 pr-5">
+            <ul class="list-unstyled">
+                <li>校園連結</li>
+                <a href="#" style="color:#000000; font-size:10px"><li>北商行事曆</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>北商認同卡</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>捐贈北商</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>北商學舍</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>北商認同卡</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>捐贈北商</li></a>
+                <a href="#" style="color:#000000; font-size:10px"><li>北商學舍</li></a>
+            </ul>
+          </div>
+        <!--   ***  col-2 end  *** -->
+        </div>
+      </div>
+  <!--                         *******        main  end        ********                                -->
+  
+  <!--                         ********        news           ***********                              -->
+      <div class="news mt-5">
+        <div class="row">
+        <!-- ***news left*** -->
+          <div class="col-sm">
+            <p class=" font-weight-bold h6">新聞中心</p>
+            <img src="images/news.jpg"class="w-100 mt-3 ml-3">
+            <p class="h5 mt-3" style="color:#003C9D">夜市專班帶起產業進修熱 茶葉專班熱鬧開學</p>
+            <p style="color:#888888">國立臺北商業大學以扎實的創新商管教育為基礎，配合地方產業發展需求，提供不同產業及企業主一個優質環境品質的進修管道，106學年度企業管理科開設「台灣茶業暨商業經營管理專班」，招收學分先修班。昨日隆重舉行始業式，北商大張瑞雄校長、邱繼智教務長、企管系張旭華主任、專科進修學校葉清江主任，以及臺北市茶葉暨商業同業公會高秀成理事長率領常務理事都到現場勉勵，學分先修班已招收50幾位學員報名相當熱烈。</p>
+          </div>
+        <!-- ***news left end *** -->
+  
+        <!-- ***news mid*** -->
+          <div class="col-sm mt-5">
+            <iframe name="f3a5051913556e8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.10/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FMs1VZf1Vg1J.js%3Fversion%3D42%23cb%3Df2d16a2c09df5c%26domain%3Dwww.ntub.edu.tw%26origin%3Dhttp%253A%252F%252Fwww.ntub.edu.tw%252Ff20a16c45f31ce%26relation%3Dparent.parent&amp;container_width=334&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FNTUB1917%2F&amp;locale=zh_TW&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" style="border: none; visibility: visible; width: 334px; height: 500px;" ></iframe>
+          </div>
+        <!-- ***news mid end*** -->
+  
+        <!-- ***news right*** -->
+          <div class="col-sm mt-5">
+            <p class="h3 font-weight-bold">台北商大影音新聞中心YOUTUBE>>平台</p>
+            <strong><span style="color: #AAAAAA;">VIDEO</span></strong>
+            <p class=" font-weight-bold h6">影音新聞</p>
+            <p class="mt-3" style="font-size:9px;">本校簡介</p>
+            <iframe width="280"src="https://www.youtube.com/embed/BrL9xG0AiWc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        <!-- ***new right end*** -->
+        </div>
+      </div>
+  <!--                         ********        news end           ***********                              -->
+  
+  <!--                        *********         footers           ***********                              -->
+      <div class="row pt-4" style="background:#222222" id="footers">
+        <div class="col-sm">
+          <ul class="list-unstyled">
+            <a href="#" style="color:#ffffff; font-size:10px"><li>校外實習專區</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>105學年畢業生流向調查</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>智慧財產權宣導</li></a>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul class="list-unstyled">
+            <a href="#" style="color:#ffffff; font-size:10px"><li>校安中心 02-23226199</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>性別平等申訴02-23515881</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>165防詐騙專線</li></a>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul class="list-unstyled">
+            <a href="#" style="color:#ffffff; font-size:10px"><li>技專校院招生策進總會</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>技專校院招生委員會聯合會</li></a>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <ul class="list-unstyled">
+            <a href="#" style="color:#ffffff; font-size:10px"><li>洗錢防制宣導</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>全民資安素養自我評量</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>科技大觀園</li></a>
+            <a href="#" style="color:#ffffff; font-size:10px"><li>回饋稅制</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-4 pb-4" style="background:#222222; color:#ffffff;font-size:10px"><center>國立臺北商業大學 校址:100台北市中正區濟南路一段321號；電話:(02)33222777；統一編號:03763608</center></div>
+      <div class="pt-5" style="background:#660077"></div>
+  <!--                        *********         footers           ***********                              -->
+    </div>
+      <!-- 到這裡開始 -->
+
+  </body>
+</html>
