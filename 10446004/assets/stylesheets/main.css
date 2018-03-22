@@ -1,0 +1,17 @@
+#base{
+    width: 950px;
+    margin: 0px auto;
+}
+
+#test{
+    background: #67057C;
+}
+
+.list{
+    margin-left: -30px;
+    list-style-type:none;
+      
+}
+.link{
+    font-size: 12px;
+}
