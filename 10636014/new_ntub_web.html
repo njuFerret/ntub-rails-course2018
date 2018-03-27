@@ -1,18 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>新．國立臺北商業大學</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- 從這裡開始 -->
-
-      <!-- 到這裡開始 -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script>
+  <title>新．國立臺北商業大學</title>
+  <style type="text/css">
+     body{
+       font-family: Verdana, sans-serif;
+     }
+     a{
+       color: #fff;
+       text-decoration: none;
+       font-size: 15px;
+     }
+     a:hover{
+       color: #fff;
+       text-decoration: underline;
+     }
+     a:active{
+       color: #fff;
+       text-decoration: none;
+     }
+     .fs{
+       font-size: 10px;
+     }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="fs" href="#">Welcome to National Taipei University of Business</a> <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav" style="font-size: 10px">
+        <li class="nav-item">
+          <a class="nav-link border-right border-secondary text-white" href="#">認識北商</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-right border-secondary text-white" href="#">網站導覽</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-right border-secondary text-white" href="#">緊急電話</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-right border-secondary text-white" href="#">交通資訊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-right border-secondary text-white" href="#">諮詢服務</a>
+        </li>
+      </ul>
     </div>
-  </body>
+  </nav>
+  <div style="background: #770077;height: 500px">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="#"><img alt="國立臺北商業大學" class="m-3" src="logo.png"></a>
+        </div>
+        <div class="col-sm-4 text-left text-sm-right">
+          <a class="my-3 ml-2 d-inline-block" href="#">首頁</a> <a class="my-3 ml-2 d-inline-block" href="#">English</a> <a class="my-3 ml-2 d-inline-block" href="#">Facebook</a> <a class="my-3 ml-2 d-inline-block" href="#">校友服務資訊系統</a>
+          <form class="form-inline float-lg-right">
+            <input aria-label="Search" class="form-control" placeholder="keyword" type="search"> <button class="btn btn-dark" type="submit">&gt;</button>
+          </form>
+        </div>
+        <div class="col-sm-2 text-center">
+          <a class="d-block" href="#">學生</a> <a class="d-block" href="#">教職員</a> <a class="d-block" href="#">新生</a> <a class="d-block" href="#">校友</a> <a class="d-block" href="#">訪客</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav align-content-start">
+            <li class="nav-item">
+              <a class="nav-link" href="#">桃園校區</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">教學單位</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">財經學院</a> <a class="dropdown-item" href="#">管理學院</a> <a class="dropdown-item" href="#">創新經營學院</a> <a class="dropdown-item" href="#">通識教育中心</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">行政單位</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">校長室</a> <a class="dropdown-item" href="#">劉副校長室</a> <a class="dropdown-item" href="#">王副校長室</a> <a class="dropdown-item" href="#">秘書室</a> <a class="dropdown-item" href="#">教務處</a> <a class="dropdown-item" href="#">研究發展處</a> <a class="dropdown-item" href="#">學生事務處</a> <a class="dropdown-item" href="#">教學發展中心</a> <a class="dropdown-item" href="#">校務研究中心</a> <a class="dropdown-item" href="#">總務處</a> <a class="dropdown-item" href="#">圖書館</a> <a class="dropdown-item" href="#">體育室</a> <a class="dropdown-item" href="#">資訊與網路中心</a> <a class="dropdown-item" href="#">軍訓室</a> <a class="dropdown-item" href="#">人事室</a> <a class="dropdown-item" href="#">主計室</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">附設學校</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">空中進修學院</a> <a class="dropdown-item" href="#">專科進修學校</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">圖書閱覽</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">圖書館</a> <a class="dropdown-item" href="#">電子校刊</a> <a class="dropdown-item" href="#">北商學報</a> <a class="dropdown-item" href="#">行政簡訊</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">招生資訊</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">日間學制</a> <a class="dropdown-item" href="#">進修學制</a> <a class="dropdown-item" href="#">空中進修學院</a> <a class="dropdown-item" href="#">專科進修學校</a> <a class="dropdown-item" href="#">國際招生</a> <a class="dropdown-item" href="#">退除役官兵二年制進修部</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">境外學生</a>
+              <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                <a class="dropdown-item" href="#">僑生</a> <a class="dropdown-item" href="#">陸籍學位生</a> <a class="dropdown-item" href="#">外籍學位生</a> <a class="dropdown-item" href="#">交換生</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">推廣教育</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">育成中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">百年校慶</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div style="background: #FFF"><img class="p-3" src="testimg.jpg" width="100%"></div>
+      <div class="row">
+        <div class="col-sm-3 text-sm-right">
+          <span class="p-1" style="background-color: rgb(230, 230, 250);"><strong style="font-size: 22px;">English Quotes</strong></span>
+        </div>
+        <blockquote class="blockquote py-3 col" style="font-size: 18px">
+          <strong>「行動」是難下的決定，剩下的只是堅持。</strong><br>
+          <i>"The most difficult thing is the decision to act, the rest is merely tenacity."</i>
+          <footer class="blockquote-footer">
+            愛蜜莉亞·艾爾哈特<cite title="Source Title">美國女性飛行員、女權運動者</cite>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 bg-light">
+          <div class="ml-3">
+            <span class="text-secondary">ACTIVITIES & EVENTS</span><br>
+            <span>活動看板</span>
+          </div>
+          <div style="background: #FFF"><img class="p-2" src="testimg_1.jpg" width="100%"></div>
+          <div class="text-sm-right">
+            <a class="border border-secondary bg-light text-dark d-inline-block" href="#" style="font-size: 12px;">More...</a>
+          </div>
+        </div>
+        <div class="col-sm-7 text-dark">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">訊息公告</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">學術研討</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">榮譽獎座</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">招生動態</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">校園職缺</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">校外徵才</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div aria-labelledby="home-tab" class="tab-pane fade show active p-2" id="home" role="tabpanel">
+              <table class="table">
+                <tbody style="font-size: 12px">
+                  <tr>
+                    <th>
+                      <a href="http://rd.ntub.edu.tw/files/13-1005-61088-1.php?Lang=zh-tw" style="color: #000;font-size: 12px;">科技部修正「科技部補助延攬研究學者暨執行專題研究計畫作業要點第8點附表及「科技部補助延攬客座科技人才教學研究費支給基準表」，並溯自107年1月1日生效</a>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <a href="http://rd.ntub.edu.tw/files/13-1005-61088-1.php?Lang=zh-tw" style="color: #000;font-size: 12px;">臺北市立大學開設兩門磨課師課程，即日起歡迎有興趣者踴躍報名。</a>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <a href="http://rd.ntub.edu.tw/files/13-1005-61088-1.php?Lang=zh-tw" style="color: #000;font-size: 12px;">國立高雄大學與文藻學校財團法人文藻外語大學合作辦理「大學社會責任（USR）實踐計畫跨校共學論壇」</a>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-sm-right">
+            <a class="border border-secondary bg-light text-dark d-inline-block" href="#" style="font-size: 12px;">More...</a>
+          </div>
+        </div>
+        <div class="col-sm-2 bg-light p-1">
+          <span class="font-weight-bold d-block">校園連結</span> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">招生動態</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">北商行事曆</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">北商認同卡</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">捐贈北商</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">獎助學金/就學貸款</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">台銀學雜費入口網</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">北商學舍</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">生涯歷程e-portfolio</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">實習就業e化平台</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">場地租借</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">智慧實驗商店iMaker</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">校務資訊專區</a> <a class="d-block text-dark my-1" href="#" style="font-size: 10px">106學年畢業流向調查</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <span class="font-weight-bold d-block">新聞中心</span>
+          <div class="m-3" style="background: #FFF">
+            <a href="#"><img class="m-2" src="testimg_2.jpg" width="100%"></a>
+          </div>
+          <div class="m-2">
+            <a class="d-block text-dark my-1 h5" href="#">夜市專班帶起產業進修熱 茶葉專班熱鬧開學</a> <span>國立臺北商業大學以扎實的創新商管教育為基礎，配合地方產業發展需求，提供不同產業及企業主一個優質環境品質的進修管道，106學年度企業管理科開設「台灣茶業暨商業經營管理專班」，招收學分先修班。昨日隆重舉行始業式，北商大張瑞雄校長、邱繼智教務長、企管系張旭華主任、專科進修學校葉清江主任，以及臺北市茶葉暨商業同業公會高秀成理事長率領常務理事都到現場勉勵，學分先修班已招收50幾位學員報名相當熱烈。</span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <iframe frameborder="0" height="500" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTUB1917%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=609026119277132" style="border:none;overflow:hidden" width="340"></iframe>
+        </div>
+        <div class="col-sm-3">
+          <span class="font-weight-bold d-block ml-3" style="font-size: 20px">NTUB YOUTUBE</span>
+          <div class="m-3" style="background: #FFF">
+            <a href="#"><img class="m-2" src="test_1.png" width="100%"></a>
+          </div>
+          <div class="ml-3">
+            <span class="text-secondary">VIDEO</span><br>
+            <span>影音新聞</span>
+          </div><span class="d-block ml-3 mt-2" style="font-size: 10px">本校簡介</span> <iframe allowfullscreen class="ml-3" frameborder="0" src="https://www.youtube.com/embed/BrL9xG0AiWc" width="300"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-dark mt-1" style="font-size: 10px">
+      <div class="col-sm-3">
+        <div class="border-left border-secondary text-white px-5">
+          <a class="d-block my-3" href="#" style="font-size: 10px">校外實習專區</a> <a class="d-block my-3" href="#" style="font-size: 10px">105學年畢業生流向調查</a> <a class="d-block my-3" href="#" style="font-size: 10px">智慧財產權宣導</a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="border-left border-secondary text-white px-5">
+          <a class="d-block my-3" href="#" style="font-size: 10px">校安中心 02-23226199</a> <a class="d-block my-3" href="#" style="font-size: 10px">性別平等申訴02-23515881</a> <a class="d-block my-3" href="#" style="font-size: 10px">165防詐騙專線</a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="border-left border-secondary text-white px-5">
+          <a class="d-block my-3" href="#" style="font-size: 10px">技專校院招生策進總會</a> <a class="d-block my-3" href="#" style="font-size: 10px">技專校院招生委員會聯合會</a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="border-left border-secondary text-white px-5">
+          <a class="d-block my-3" href="#" style="font-size: 10px">洗錢防制宣導</a> <a class="d-block my-3" href="#" style="font-size: 10px">全民資安素養自我評量</a> <a class="d-block my-3" href="#" style="font-size: 10px">科技大觀園</a> <a class="d-block my-3" href="#" style="font-size: 10px">回饋稅制</a>
+        </div>
+      </div>
+    </div><span class="row bg-dark text-center text-white d-block p-2" style="font-size: 10px">國立臺北商業大學 校址:100台北市中正區濟南路一段321號；電話:(02)33222777；統一編號:03763608</span>
+    <footer style="background: #770077;height: 50px;"></footer>
+  </div>
+</body>
 </html>
