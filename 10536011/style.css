@@ -1,0 +1,32 @@
+body{
+	font-family: Microsoft JhengHei;
+	background-color: #8b2dd8;
+}
+a:link{
+	color: #ffffff;
+}
+a:visited {
+	color: #ffffff;
+}
+a:hover{
+	color:#eaff63;
+	text-decoration:none;
+}
+.dropdown-menu li:hover .sub-menu {visibility: visible;}
+.dropdown:hover .dropdown-menu {display: block;}
+#mintop{
+	font-size: smaller;
+}
+#top{
+	padding :10px 10px 10px 10px;
+}
+#minnav{
+	font-size: smaller;
+}
+#content{
+	box-shadow: 0 20px 40px -10px rgba(0,0,0,0.6); 
+	background: #ffffff;
+}
+.nav-link{
+	background-color: #d8d6d6;
+}
